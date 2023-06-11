@@ -4,12 +4,13 @@
 int main() {
     unsigned int szerokosc = 0;
     unsigned int wysokosc;
+    int input;
     
     do {
-        std::cout << "[*]: Podaj szerokosc tabelki: ";
+        std::cout << std::string("[*]: Podaj szerokosc tabelki: ");
         std::cin >> szerokosc;
         if(szerokosc == 0) {
-            std::cerr << "[-]: Szerokosc musi byc dodatnia" << std::endl;
+            std::cerr << std::string("[-]: Szerokosc musi byc dodatnia!") << std::endl;
         }
     }
     while(szerokosc == 0);
@@ -18,7 +19,7 @@ int main() {
         std::cout << "[*]: Podaj wysokosc tabelki: ";
         std::cin >> wysokosc;
         if(wysokosc == 0) {
-            std::cerr << "[-]: Wysokosc musi byc dodatnia" << std::endl;
+            std::cerr << std::string("[-]: Wysokosc musi byc dodatnia!") << std::endl;
         }
     }
     while(wysokosc == 0);
@@ -29,6 +30,8 @@ int main() {
         }
         printf("\n");
     }
+    
+    std::cin >> input;
 
     return 0;
 }
