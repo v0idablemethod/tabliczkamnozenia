@@ -3,6 +3,8 @@
 
 int main() {
     unsigned int szerokosc = 0;
+    unsigned int wysokosc;
+    
     do {
         std::cout << "[*]: Podaj szerokosc tabelki: ";
         std::cin >> szerokosc;
@@ -12,7 +14,6 @@ int main() {
     }
     while(szerokosc == 0);
 
-    unsigned int wysokosc;
     do {
         std::cout << "[*]: Podaj wysokosc tabelki: ";
         std::cin >> wysokosc;
